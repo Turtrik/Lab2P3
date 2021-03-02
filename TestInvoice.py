@@ -10,3 +10,7 @@ def products():
 
 def test_CanFindInvoiceClass():
     invoice = Invoice()
+
+def test_CanCalculateTotalIMpurePrice(products):
+    invoice = Invoice()
+    invoice.totalImpurePrice(products)
