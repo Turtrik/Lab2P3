@@ -11,3 +11,4 @@ def products():
 def test_CanCalculateTotalIMpurePrice(products):
     invoice = Invoice()
     invoice.totalImpurePrice(products)
+    assert invoice.totalImpurePrice(products) == 75
